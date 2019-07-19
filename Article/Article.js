@@ -144,7 +144,6 @@ function ArticleComponent(data){
   button.addEventListener('click', () => buttonClickHandler())
 
   const buttonClickHandler = () => {
-    console.log('click')
     article.classList.toggle('article-open')
   }
 
