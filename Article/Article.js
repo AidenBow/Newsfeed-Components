@@ -85,6 +85,13 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+  },
+  {
+    title: 'hello',
+    date: 'now',
+    firstParagraph: 'dfesiufuhfsehiusfuihgsdffsdhuhj',
+    secondParagraph: 'feswgiukcsediguxzjfhjuskliko;dhfsjihjfldhdhjkdfhjlkfdvklhjdfvkjhddhjklfvdfvkhjfdvcxhjdbesuyuh vfcdbnuyhj uj',
+    thirdParagraph: 'fekhgijuhefd sefdiugsfe fserbiufse ,nsefkbujsfe'
   }
 ];
 
@@ -135,7 +142,7 @@ function ArticleComponent(data){
   button.classList.add('expandButton')
   button.textContent = 'Expand'
   button.addEventListener('click', () => buttonClickHandler())
-  
+
   const buttonClickHandler = () => {
     console.log('click')
     article.classList.toggle('article-open')
