@@ -112,3 +112,25 @@ const data = [
   Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new artible
 
 */
+
+function ArticleComponent(data){
+  const article = document.createElement('div')
+  article.classList.add('article')
+
+  const title = document.createElement('h2')
+  title.textContent = data.title
+
+  const date = document.createElement('p')
+  date.classList.add('date')
+  date.textContent = data.date
+
+  const p1 = document.createElement('p')
+  const p2 = document.createElement('p')
+  const p3 = document.createElement('p')
+  p1.textContent = data.firstParagraph
+  p2.textContent = data.secondParagraph
+  p1.textContent = data.thirdParagraph
+
+  const button = document.createElement('span')
+  button.classList.add('expandButton')
+}
