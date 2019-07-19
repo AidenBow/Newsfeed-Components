@@ -129,8 +129,29 @@ function ArticleComponent(data){
   const p3 = document.createElement('p')
   p1.textContent = data.firstParagraph
   p2.textContent = data.secondParagraph
-  p1.textContent = data.thirdParagraph
+  p3.textContent = data.thirdParagraph
 
   const button = document.createElement('span')
   button.classList.add('expandButton')
+  button.textContent = 'Expand'
+  button.addEventListener('click', () => buttonClickHandler())
+  
+  const buttonClickHandler = () => {
+    console.log('click')
+    article.classList.toggle('article-open')
+  }
+
+  article.appendChild(title)
+  article.appendChild(date)
+  article.appendChild(p1)
+  article.appendChild(p2)
+  article.appendChild(p3)
+  article.appendChild(button)
+
+  return article
 }
+
+data.map(item => {
+  let newArticle = ArticleComponent(item);
+  document.querySelector('.articles').appendChild(newArticle);
+})
